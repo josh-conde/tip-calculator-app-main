@@ -115,6 +115,8 @@ input {
 .percent-container button:hover {
     cursor: pointer;
     opacity: .8;
+    background-color: hsl(172, 67%, 45%) ;
+    color:hsl(183, 100%, 15%);
 }
 
 .percent-container form {
@@ -166,6 +168,12 @@ input {
     font-family: 'Space Mono', Arial, sans-serif;
     color:hsl(183, 100%, 15%);
     font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.right-container button:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
 }
 
 .tip-amount-container {
