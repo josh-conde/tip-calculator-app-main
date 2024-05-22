@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+<div class="heading-container">
+  <img src="images/logo.svg" alt="Splitter Logo">
+</div>
+
+<div class="main-container">
+  <div class="left-container">
+    <div class="bill-container">
+      <h2>Bill</h2>
+      <form>
+        <div class="input-container">
+          <img src="images/icon-dollar.svg" alt="Icon" class="input-icon">
+          <input type="text" placeholder="0">
+        </div>
+      </form>
+    </div>
+    <div class="percent-container">
+      <h2>Select Tip %</h2>
+      <button id="5">5%</button>
+      <button id="10">10%</button>
+      <button id="15">15%</button>
+      <button id="25">25%</button>
+      <button id="50">50%</button>
+      <form>
+        <label for="number"></label>
+        <input id="custom" type="text" placeholder="Custom">
+      </form>
+    </div>
+    <div class="people-container">
+      <h2>Number of People</h2>
+      <form>
+        <div class="input-container">
+          <img src="images/icon-person.svg" alt="Icon" class="input-icon">
+          <input type="text" placeholder="0">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="right-container">
+    <div class="tip-amount-container">
+      <h3>Tip Amount</h3>
+      <p>/ person</p>
+      <h1 id="tip-amount">$0.00</h1>
+    </div>
+
+    <div class="total-container">
+      <h3>Total</h3>
+      <p>/ person</p>
+      <h1 id="total">$0.00</h1>
+    </div>
+
+    <button id="reset">Reset</button>
+  </div>
+</div>
+  
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Joshua Conde</a>.
+</div>
+</body>
+</html>
