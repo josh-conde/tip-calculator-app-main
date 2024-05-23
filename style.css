@@ -59,6 +59,36 @@ input {
     background-color:hsl(189, 41%, 97%);
 }
 
+input::placeholder {
+    font-family: 'Space Mono', Arial, sans-serif;
+    color:hsl(183, 100%, 15%);
+    font-size: .8rem;
+    text-align: right;
+}
+
+textarea::placeholder {
+    font-family: 'Space Mono', Arial, sans-serif;
+    color:hsl(183, 100%, 15%);
+    font-size: .8rem;
+    text-align: right;
+}
+
+input[type="text"], 
+textarea {
+  width: 100%;
+  font-size: .8rem;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  font-weight: 700;
+  font-family: 'Space Mono', Arial, sans-serif;
+}
+
+input:focus, 
+textarea:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+
 .heading-container {
     width: 100%;
     display: flex;
@@ -90,7 +120,7 @@ input {
 
 .percent-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: last baseline;
     gap: 5px;
@@ -200,4 +230,24 @@ input {
     grid-column: 2;
     grid-row: 1 / span 2;
     color: hsl(172, 67%, 45%);
+}
+
+button.selected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 375px;
+    }
+
+    .percent-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;;
+    }
 }
